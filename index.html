@@ -12,7 +12,9 @@
     />
     <style>
       body {
-        background: url("https://wallpapercave.com/wp/wp3236572.jpg");
+        background: url("https://www.psddots.com/wp-content/uploads/2013/07/Pink-Blue-Blured-Texture.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
       }
       .container {
         margin-top: 50px;
@@ -21,18 +23,21 @@
       ::placeholder {
         font-size: x-small;
       }
+      h1 {
+        color: rgb(3, 78, 218);
+      }
     </style>
   </head>
   <body>
     <div class="container">
-      <h1 class="text-center text-primary mb-5">FaceBook Registration</h1>
+      <h1 class="text-center mb-5">FaceBook Registration</h1>
       <h3>Sign Up</h3>
       <h4>It's free and anyone can join</h4>
       <div class="row">
         <div class="col-md-6 col-sm-12">
           <label for="firstName" class="form-label">First Name </label>
           <input
-            onblur="validateFirstname()"
+            onkeypress="validateFirstname()"
             class="form-control"
             type="text"
             name="firstName"
@@ -43,7 +48,7 @@
         <div class="col-md-6 col-sm-12">
           <label for="lastName" class="form-label">Last Name </label>
           <input
-            onblur="validateLastname()"
+            onkeypress="validateLastname()"
             class="form-control"
             type="text"
             name="lastName"
@@ -55,7 +60,7 @@
         <div class="col-md-12">
           <label for="email">Email ID</label>
           <input
-            onblur="validateEmail()"
+            onkeypress="validateEmail()"
             class="form-control"
             type="email"
             name="email"
@@ -67,9 +72,7 @@
         <div class="col-md-6 col-sm-12">
           <label for="password"> Password</label>
           <input
-            onkeydown="validatePassword()"
-            onkeyup="validatePassword()"
-            onblur=""
+            onkeypress="validatePassword()"
             class="form-control"
             type="password"
             name="password"
@@ -80,8 +83,7 @@
         <div class="col-md-6 col-sm-12">
           <label for="passwordagain">confirm password</label>
           <input
-            onkeydown="validatePasswordagain()"
-            onkeyup="validatePasswordagain()"
+            onkeypress="validatePasswordagain()"
             class="form-control"
             type="password"
             name="passwordagain"
@@ -93,9 +95,7 @@
         <div class="col-md-12">
           <label for="phonenumber">Phone number</label>
           <input
-            onkeyup="validatePhonenumber()"
-            onkeydown="validatePhonenumber()"
-            onblur="validatePhonenumber()"
+            onkeypress="validatePhonenumber()"
             class="form-control"
             type="number"
             name="phonenumber"
