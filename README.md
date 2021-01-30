@@ -1,4 +1,3 @@
 # facebook
-
-this is just a sample registration page with a little validation 
-the validation is not fully efficiant
+This is just a registratin validation page
+(The validation is not fully efficiant)
