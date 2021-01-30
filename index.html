@@ -37,7 +37,8 @@
         <div class="col-md-6 col-sm-12">
           <label for="firstName" class="form-label">First Name </label>
           <input
-            onkeypress="validateFirstname()"
+            onkeydown="validateFirstname()"
+            onkeyup="validateFirstname()"
             class="form-control"
             type="text"
             name="firstName"
@@ -48,7 +49,8 @@
         <div class="col-md-6 col-sm-12">
           <label for="lastName" class="form-label">Last Name </label>
           <input
-            onkeypress="validateLastname()"
+            onkeydown="validateLastname()"
+            onkeyup="validateLastname()"
             class="form-control"
             type="text"
             name="lastName"
@@ -60,7 +62,8 @@
         <div class="col-md-12">
           <label for="email">Email ID</label>
           <input
-            onkeypress="validateEmail()"
+            onkeydown="validateEmail()"
+            onkeyup="validateEmail()"
             class="form-control"
             type="email"
             name="email"
@@ -72,7 +75,8 @@
         <div class="col-md-6 col-sm-12">
           <label for="password"> Password</label>
           <input
-            onkeypress="validatePassword()"
+            onkeyup="validatePassword()"
+            onkeydown="validatePassword()"
             class="form-control"
             type="password"
             name="password"
@@ -83,7 +87,8 @@
         <div class="col-md-6 col-sm-12">
           <label for="passwordagain">confirm password</label>
           <input
-            onkeypress="validatePasswordagain()"
+            onkeydown="validatePasswordagain()"
+            onkeyup="validatePasswordagain()"
             class="form-control"
             type="password"
             name="passwordagain"
@@ -95,7 +100,8 @@
         <div class="col-md-12">
           <label for="phonenumber">Phone number</label>
           <input
-            onkeypress="validatePhonenumber()"
+            onkeyup="validatePhonenumber()"
+            onkeydown="validatePhonenumber()"
             class="form-control"
             type="number"
             name="phonenumber"
