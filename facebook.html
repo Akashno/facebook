@@ -29,7 +29,7 @@
       <h3>Sign Up</h3>
       <h4>It's free and anyone can join</h4>
       <div class="row">
-        <div class="col">
+        <div class="col-md-6 col-sm-12">
           <label for="firstName" class="form-label">First Name </label>
           <input
             onblur="validateFirstname()"
@@ -40,7 +40,7 @@
             placeholder="minimum 5 words"
           />
         </div>
-        <div class="col">
+        <div class="col-md-6 col-sm-12">
           <label for="lastName" class="form-label">Last Name </label>
           <input
             onblur="validateLastname()"
@@ -51,17 +51,20 @@
           />
         </div>
       </div>
-
-      <label for="email">Email ID</label>
-      <input
-        onblur="validateEmail()"
-        class="form-control"
-        type="email"
-        name="email"
-        id="email"
-      />
       <div class="row">
-        <div class="col">
+        <div class="col-md-12">
+          <label for="email">Email ID</label>
+          <input
+            onblur="validateEmail()"
+            class="form-control"
+            type="email"
+            name="email"
+            id="email"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
           <label for="password"> Password</label>
           <input
             onkeydown="validatePassword()"
@@ -74,8 +77,8 @@
             placeholder="8 charactors or more"
           />
         </div>
-        <div class="col">
-          <label for="passwordagain">confirm</label>
+        <div class="col-md-6 col-sm-12">
+          <label for="passwordagain">confirm password</label>
           <input
             onkeydown="validatePasswordagain()"
             onkeyup="validatePasswordagain()"
@@ -85,25 +88,31 @@
             id="passwordagain"
           />
         </div>
-        <div class="row">
-          <div class="col">
-            <label for="phonenumber">Phone number</label>
-            <input
-              onkeyup="validatePhonenumber()"
-              onkeydown="validatePhonenumber()"
-              onblur="validatePhonenumber()"
-              class="form-control"
-              type="number"
-              name="phonenumber"
-              id="phonenumber"
-              placeholder="10 digits are must"
-            />
-          </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <label for="phonenumber">Phone number</label>
+          <input
+            onkeyup="validatePhonenumber()"
+            onkeydown="validatePhonenumber()"
+            onblur="validatePhonenumber()"
+            class="form-control"
+            type="number"
+            name="phonenumber"
+            id="phonenumber"
+            placeholder="10 digits are must"
+          />
         </div>
-
-        <button onclick="submitHandler()" class="btn mt-5 btn-primary">
-          Submit
-        </button>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button
+            onclick="submitHandler()"
+            class="btn mt-5 btn-primary btn-lg w-100"
+          >
+            Submit
+          </button>
+        </div>
       </div>
     </div>
 
