@@ -1,5 +1,7 @@
-
+var alert = document.getElementById('alert')
+alert.classList.add("d-none");
 //first name validation
+
 function validateFirstname() {
   var firstName = document.getElementById("firstName");
   if (firstName.value == "" || firstName.value.length < 4 ) {
@@ -60,7 +62,9 @@ function validatePassword() {
 function validatePasswordagain() {
   var password = document.getElementById("password");
   var passwordagain = document.getElementById("passwordagain");
-  
+  if(password.value == ""){
+    return false;
+  }
   if (password.value != passwordagain.value || password.value.length < 8) {
     passwordagain.classList.add("is-invalid");
     passwordagain.classList.remove("is-valid");
@@ -79,8 +83,17 @@ function submitHandler() {
     passwordagain.classList.contains("is-valid") &&
     phonenumber.classList.contains("is-valid")
   ) {
-    alert("REgistration success");
+    alert.classList.add("bg-success");
+    alert.classList.remove("d-none");
+    alert.classList.add("d-block");
+    alert.textContent="Registration success";
+   
   } else {
-    alert("Unsuccessfull registration");
+    alert.classList.remove("d-none");
+    alert.classList.add("d-block");
+    alert.textContent="Registration failed";
+    alert.classList.remove("bg-success");
+    alert.classList.add("bg-danger");
+    
   }
 }
