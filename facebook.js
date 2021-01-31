@@ -83,17 +83,20 @@ function submitHandler() {
     passwordagain.classList.contains("is-valid") &&
     phonenumber.classList.contains("is-valid")
   ) {
+    alert.classList.remove("bg-danger");
     alert.classList.add("bg-success");
     alert.classList.remove("d-none");
     alert.classList.add("d-block");
     alert.textContent="Registration success";
    
   } else {
+    alert.classList.remove("bg-success");
+    alert.classList.add("bg-danger");
     alert.classList.remove("d-none");
     alert.classList.add("d-block");
     alert.textContent="Registration failed";
-    alert.classList.remove("bg-success");
-    alert.classList.add("bg-danger");
+    
+    
     
   }
 }
