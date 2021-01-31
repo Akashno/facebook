@@ -2,7 +2,7 @@
 //first name validation
 function validateFirstname() {
   var firstName = document.getElementById("firstName");
-  if (firstName.value == "" || firstName.value.length < 4) {
+  if (firstName.value == "" || firstName.value.length < 4 ) {
     firstName.classList.remove("is-valid");
     firstName.classList.add("is-invalid");
   } else {
@@ -60,13 +60,15 @@ function validatePassword() {
 function validatePasswordagain() {
   var password = document.getElementById("password");
   var passwordagain = document.getElementById("passwordagain");
-  if (password.value != passwordagain.value) {
+  
+  if (password.value != passwordagain.value || password.value.length < 8) {
     passwordagain.classList.add("is-invalid");
     passwordagain.classList.remove("is-valid");
   } else {
     passwordagain.classList.add("is-valid");
     passwordagain.classList.remove("is-invalid");
   }
+  
 }
 function submitHandler() {
   if (
